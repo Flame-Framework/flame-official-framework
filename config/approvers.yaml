@@ -1,0 +1,16 @@
+# FLAME — Approvers List
+# Loaders consult this file to validate `approved-by` on every project-context.md deviation.
+# A deviation whose approver name does not match an entry below is IGNORED by code-review.
+#
+# Maintain this file as a team. Add tech-leads, architects, and security officers
+# authorized to sign off on deviations. Do not include junior contributors.
+#
+# Format:
+#   approvers:
+#     - name: "<Full Name>"           # exact match against the deviation's `approved-by` (before the parenthesized ticket-ref)
+#       role: "<role>"                # tech-lead | architect | security-officer | head-of-engineering
+#       notes: "<optional>"           # e.g. scope of authority, dates active
+#
+# Empty list → ALL deviations are treated as unknown-approver and ignored.
+
+approvers: []

@@ -1,0 +1,63 @@
+# FLAME — Framework Configuration
+# This file is generated automatically during first-time setup.
+# Do not edit manually unless you know what you are doing.
+
+framework:
+  name: "FLAME"
+  version: "1.0.0"
+
+workspaces:
+  # - "~/AnypointStudio/studio-workspace"
+
+# Optional sections below — only included if configured during setup
+
+# parent-pom:
+#   group-id: ""
+#   artifact-id: ""
+#   version: ""
+
+# mcp:
+#   servers:
+#     anypoint: { enabled: true }
+#     postman: { enabled: true }
+
+# review:
+#   dev:
+#     max-attention-points: 6
+#     base-branch: "main"     # REQUIRED to run code-review --dev (no default; e.g. "main", "dev", "develop")
+#     # OPTIONAL — override the active rule list per section.
+#     # If omitted, the orchestrator scans the section file headings for rule IDs.
+#     # If present, the listed IDs become authoritative and the orchestrator verifies every sub-agent validated every rule.
+#     # sections:
+#     #   A-I:   { rules: [A.1, A.2, A.2.1, A.2.2, A.3, A.4] }
+#     #   A-II:  { rules: [A.5, A.5.1, A.5.2, A.5.3, A.5.4, A.6] }
+#     #   A-III: { rules: [A.5.5, A.5.6, A.5.7, A.7, A.8, A.9] }
+#     #   B-I:   { rules: [B-I.1, B-I.2, B-I.3, B-I.4] }
+#     #   B-II:  { rules: [B-II.2.1, B-II.2.2, B-II.2.3] }
+#     #   B-III: { rules: [B-III.1, B-III.1.1, B-III.2, B-III.3, B-III.4] }
+#     #   B-IV:  { rules: [B-IV.1, B-IV.2, B-IV.3, B-IV.4, B-VII.1] }
+#     #   B-V:   { rules: [B-V.1, B-V.2, B-VI.1, B-VI.2] }
+#   raml:
+#     medium-threshold-percent: 50
+#     # OPTIONAL — same shape as dev.sections above. Section IDs follow the orchestrator's framework.yaml keys.
+#     # sections:
+#     #   A:               { rules: [A.1, A.2, A.2.1, A.2.2, A.3, A.4, A.4.1, A.4.2, A.4.3, A.5, A.6, A.6.1, A.6.2, A.6.3, A.7, A.8] }
+#     #   B.1+B.2:         { rules: [B.1, B.1.1, B.1.2, B.1.3, B.2, B.2.1, B.2.2, B.2.3, B.2.4, B.2.5, B.2.6] }
+#     #   B.3+B.4:         { rules: [B.3, B.3.1, B.3.2, B.3.3, B.4, B.4.1, B.4.2] }
+#     #   B.5:             { rules: [B.5, B.5.1, B.5.2, B.5.3, B.5.4, B.5.5] }
+#     #   B.6+B.7+B.8+B.9: { rules: [B.6, B.6.1, B.6.2, B.6.3, B.7, B.7.1, B.7.2, B.8, B.8.1, B.8.2, B.8.3, B.9, B.9.1] }
+
+# organization:
+#   project-prefix: ""        # e.g. "myorg" — project files named {prefix}-{name}-{sapi|papi|eapi}.raml. Empty = no prefix required.
+
+# raml:
+#   common-data:              # The shared RAML asset (resourceTypes, securitySchemes, errorResponse, etc.)
+#     group-id: ""            # Anypoint Exchange organization ID
+#     asset-id: "common-data"
+#     version: ""             # Pinned version (e.g. "<x.y.z>")
+
+# test:
+#   coverage:
+#     application-percent: 80   # default 80
+#     flow-percent: 90          # default 90
+#     processor-percent: 80     # default 80
